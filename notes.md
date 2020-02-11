@@ -26,6 +26,31 @@ DO
 - view the exercises for a workout
 - view (GET) workouts that include pushups => filter
 
+https://www.google.com/search
+? <= the beginning of the query string
+q = rest+api
+&
+rlz = 1C5CHFA_enUS885DO886
+&
+oq = REST+API
+&
+aqs = chrome.0.0l8.6503j0j8
+&
+sourceid = chrome
+&
+ie=8
+&
+active=true
+
+```js
+req.query = {
+  q: "rest api",
+  rlz: "1C5CHFA_enUS885DO886",
+  ie: "8",
+  active: "true",
+};
+```
+
 20 resources x 5 => 100 endpoints
 
 ## Resources
@@ -43,3 +68,9 @@ DO
 - muscle groups 
 - profiles <- same as account?
 
+What ways of sending information from the client to the server have we seen so far?
+
+- query string => `req.query`
+- url parameters => `req.params`
+- body => `req.body`
+- headers => `req.headers`
